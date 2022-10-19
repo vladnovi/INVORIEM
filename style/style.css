@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+/*ШРИФТЫ*/
+@import url("Fonts/font/stylesheet.css");
+/*ОБНУЛЕНИЕ*/
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+/*НАЧАЛО ВЕРСТКИ*/
+body {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  min-height: 100vh;
+  background-image: url("../Media/invorium header.png");
+  background-size: cover;
+}
+.header .container {
+  max-width: 1920px;
+  padding: 0 100px;
+}
+.header .container .header_top {
+  padding: 56px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .header_top .nav {
+  display: flex;
+  gap: 54px;
+}
+.header .container .header_top .nav .nav_link {
+  font-size: 20px;
+  line-height: 36px;
+  padding: 10px;
+  color: #114455;
+}
+.header .container .header_top .nav .nav_button {
+  display: flex;
+  gap: 18px;
+  font-size: 20px;
+  line-height: 36px;
+  padding: 10px 24px;
+  border: 1px solid #114455;
+  border-radius: 2px;
+  color: #114455;
+}/*# sourceMappingURL=style.css.map */
