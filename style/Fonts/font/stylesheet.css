@@ -1,14 +1,14 @@
 
 @font-face {
     font-family: 'Gilroy';
-    src: url('Gilroy-ExtraboldItalic.eot');
-    src: local('Gilroy Extrabold Italic'), local('Gilroy-ExtraboldItalic'),
-        url('Gilroy-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
-        url('Gilroy-ExtraboldItalic.woff2') format('woff2'),
-        url('Gilroy-ExtraboldItalic.woff') format('woff'),
-        url('Gilroy-ExtraboldItalic.ttf') format('truetype');
+    src: url('Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('Gilroy-Extrabold.woff2') format('woff2'),
+        url('Gilroy-Extrabold.woff') format('woff'),
+        url('Gilroy-Extrabold.ttf') format('truetype');
     font-weight: 800;
-    font-style: italic;
+    font-style: normal;
 }
 
 @font-face {

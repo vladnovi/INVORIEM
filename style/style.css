@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*ШРИФТЫ*/
 @import url("Fonts/font/stylesheet.css");
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 /*ОБНУЛЕНИЕ*/
 *, *::before, *::after {
   padding: 0;
@@ -51,12 +52,17 @@ body {
   gap: 54px;
 }
 .header .container .header_top .nav .nav_link {
+  font-weight: 800;
   font-size: 20px;
   line-height: 36px;
   padding: 10px;
   color: #114455;
 }
+.header .container .header_top .nav .nav_link:hover {
+  color: rgba(17, 68, 85, 0.5);
+}
 .header .container .header_top .nav .nav_button {
+  font-weight: 800;
   display: flex;
   gap: 18px;
   font-size: 20px;
@@ -65,4 +71,85 @@ body {
   border: 1px solid #114455;
   border-radius: 2px;
   color: #114455;
+}
+.header .container .header_top .nav .nav_button:hover {
+  color: rgba(17, 68, 85, 0.5);
+  border: 1px solid rgba(17, 68, 85, 0.5);
+}
+.header .container .header_middle {
+  display: flex;
+  flex-direction: column;
+}
+.header .container .header_middle .header_middle_title {
+  max-width: 700px;
+  margin-top: 50px;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 94px;
+  color: #114455;
+}
+.header .container .header_middle .header_middle_description {
+  margin-top: 48px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: -0.02em;
+  color: #1f1f1f;
+  opacity: 0.7;
+  font-family: "Work Sans", sans-serif;
+}
+.header .container .header_middle .header_middle_button {
+  font-weight: 800;
+  display: flex;
+  gap: 18px;
+  margin-top: 72px;
+  font-size: 20px;
+  width: 197px;
+  line-height: 36px;
+  padding: 14px 28px;
+  background-color: #114455;
+  border-radius: 2px;
+  color: #fff;
+}
+.header .container .header_middle .header_middle_button:hover {
+  background-color: rgba(17, 68, 85, 0.5);
+}
+.header .container .header_bottom {
+  margin-top: 180px;
+  text-align: center;
+}
+.header .container .header_bottom .header_bottom_button {
+  transition: 1s;
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.header .container .header_bottom .header_bottom_button :hover {
+  -webkit-animation: bounce 1s;
+          animation: bounce 1s;
 }/*# sourceMappingURL=style.css.map */
