@@ -1,0 +1,78 @@
+/*ШРИФТЫ*/
+@import url("../style/Fonts/font/stylesheet.css");
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/*ОБНУЛЕНИЕ*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/*НАЧАЛО ВЕРСТКИ*/
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    background-color: rgb(216, 232, 237);
+}
+.container {
+    max-width: 1920px;
+    padding: 0 100px;
+    .header {
+        padding: 56px 0;
+        text-align: center;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .form_description {
+            font-size: 50px;
+            font-weight: bold;
+            max-width: 900px;
+            margin-top: 60px;
+            color: #114455;
+        }
+        .form_input {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            margin-top: 70px;
+            input {
+                border-radius: 10px;
+                width: 600px;
+                height: 50px;
+                font-size: 15px;
+                text-align: center;
+            }
+            button {
+                border-radius: 40px;
+                width: 200px; 
+                height: 50px;
+                font-size: 15px;
+                cursor: pointer;
+                background-color: #114455;
+                color: #fff;
+            }
+            button:hover {
+                background-color: rgba($color: #114455, $alpha: 0.5);
+            }
+        }
+    }
+}

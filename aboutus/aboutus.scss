@@ -1,0 +1,50 @@
+/*ШРИФТЫ*/
+@import url("../style/Fonts/font/stylesheet.css");
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+/*ОБНУЛЕНИЕ*/
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul, ol, li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+/*НАЧАЛО ВЕРСТКИ*/
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 500;
+    background-color: rgb(216, 232, 237);
+}
+.container {
+    max-width: 1920px;
+    padding: 0 100px;
+    .header {
+        padding: 56px 0;
+        text-align: center;
+        color: #114455;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        p {
+            color: #114455;
+            font-size: 25px;
+            margin-top: 30px;
+        }
+    }
+}
